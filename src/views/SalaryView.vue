@@ -10,6 +10,7 @@
 
 <script>
   export default {
+    name:"salaryApp",
     data () {
       return {
         headers: [

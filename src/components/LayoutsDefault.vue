@@ -20,6 +20,7 @@
       <v-list dense nav>
         <v-list-item
           v-for="item in items"
+          :to="item.path"
           :key="item.title"
           link
         >
@@ -54,9 +55,9 @@
     data () {
       return {
         items: [
-          { title: 'Dashboard', icon: 'mdi-view-dashboard' },
-          { title: 'Photos', icon: 'mdi-image' },
-          { title: 'About', icon: 'mdi-help-box' },
+          { title: 'Employee', icon: 'mdi-view-dashboard', path: '/' },
+          { title: 'Position', icon: 'mdi-image', path: '/position'},
+          { title: 'Salary', icon: 'mdi-star', path:'/salary'},
         ],
         right: null,
         alert: false,
